@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+</head>
+<body>
+ <audio id ="0" src = "1.wav"> </audio>
+  <audio id ="1" src = "2.wav"> </audio>
+   <audio id ="2" src = "3.wav"> </audio>
+   <audio id ="3" src = "4.wav"> </audio>
+  <audio id ="4" src = "5.wav"> </audio>
+   <audio id ="5" src = "6.wav"> </audio>
+    <audio id ="6" src = "7.wav"> </audio>
+   <audio id ="7 "src = "8.wav"> </audio>
+  
+ <script  type ="text/javascript">   
+/*
+ KEY1= document.getElementById("0");
+ KEY2= document.getElementById("1");
+ KEY3= document.getElementById("2");
+ */
+ //var counter = 3; 
+var   RAN = 0;
+var   RAN2 = 0;
+var   RAN1=0 ;
+     
+  setInterval(main, 6000);
+function  main () {
+ //if ( counter >0 ) {
+ //myVar = setInterval(main, 0520); 
+  //   update();
+ RAN  = Math.floor((Math.random() * 8) );
+ console.log("Fist " +RAN);
+ Key = document.getElementById(RAN);
+ Key.play();
+    
+setTimeout(Counterr, 600); 
+
+}
+ 
+     function Counterr () {
+
+    var RAN1 = Math.floor((Math.random() * 8) );
+         while( RAN1 == RAN ) 
+         {
+         var Roun = Math.floor((Math.random() * 8) );
+             console.log("2nd was changed xDDD");
+         }
+ console.log("Second " +RAN1);
+ Key = document.getElementById(RAN1);
+ Key.play();         
+ setTimeout(thirssound, 600); 
+ 
+     }
+     
+     function thirssound () {
+
+ var   RAN2 = Math.floor((Math.random() * 8) );
+
+         while(RAN2 == RAN1) 
+         {
+         var RAN2 = Math.floor((Math.random() * 8) );
+             console.log("3r was changed xDDD");
+         }
+  console.log("Third " +RAN2);         
+ Key = document.getElementById(RAN2);
+ Key.play();
+
+
+     }
+     
+ </script>
+
+
+</body>
+</html>

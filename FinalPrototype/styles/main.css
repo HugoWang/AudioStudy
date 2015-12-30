@@ -1,0 +1,114 @@
+#webCamWindow {
+	border: 0px solid #fff;
+	width: 640px;
+	height:  480px;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	left: 0;	
+    
+}
+
+#canvas {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 640px;
+	height:  480px;
+}
+
+
+
+#img {
+    position: absolute;
+	width: 640px;
+	height:  480px;	
+	top: 0;
+	opacity: 0;
+
+}
+
+body {
+     text-align: center;
+
+     margin-left: 0px;
+
+     margin-right: 0px;
+
+     margin-top: 0px;
+
+     margin-bottom:0px;
+
+     overflow:hidden;
+
+     background: #42b9ff;
+    }
+
+.centerdiv {
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    margin-left: -350px;
+    margin-top: -250px;
+    width: 700px;
+    height: 500px;
+    
+    white-space: nowrap;
+    
+    z-index:-1;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.linkdiv {
+    position: absolute;
+
+    top: 0;
+
+    right:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:1;
+}
+#dgi_hand{
+    position:relative;
+    vertical-align: middle;
+    max-height: 500px;
+    max-width: 700px;
+    left: 0;
+    top: 0;
+    -webkit-animation-name: resize; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+    animation-name: resize;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#dgi_info{
+    width:100%;
+    text-align:left
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes resize {
+    0%   {width:100%; height:100%;}   
+    50%   {width:30%; height:30%;}   
+    100% {width:100%; height:100%;}
+}
+
+/* Standard syntax */
+@keyframes resize {
+    0%   {width:100%; height:100%;}   
+    50%   {width:30%; height:30%;}   
+    100% {width:100%; height:100%;}
+}

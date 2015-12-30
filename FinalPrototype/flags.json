@@ -1,0 +1,26 @@
+{"quizlist":[
+  
+	{
+	"question":"Which one is the flag of Norway?",
+	"option1":"no.png",
+	"option2":"se.png",
+	"option3":"ee.png",
+    "option4":"fi.png"
+	},
+	{
+	"question":"Which one is the flag of Cameroon?",
+	"option1":"cm.png",
+	"option2":"uy.png",
+	"option3":"zw.png",
+    "option4":"ug.png"
+	},
+	{
+	"question":"Which one is the flag of China?",
+	"option1":"cn.png",
+	"option2":"tn.png",
+	"option3":"vn.png",
+    "option4":"la.png"
+	}
+
+]
+}
